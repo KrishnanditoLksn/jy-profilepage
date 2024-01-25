@@ -1,0 +1,113 @@
+/*html*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0px auto;
+}
+
+/*Header*/
+header {
+    display: inline;
+}
+
+/*Navbar*/
+.navbar {
+    background-color: #1D2B53;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0px;
+
+}
+
+div.logo {
+    display: flex;
+}
+
+nav a:active {
+    color: #ff0000;
+}
+
+nav a:hover {
+    background-color: #7E2553;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+div.nav-links {
+    direction: rtl;
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+/*List*/
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+    color: white;
+    font-size: small;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+    padding: 16px 14px;
+    padding-right: 2px;
+}
+
+
+/*Jumbotron*/
+div.jumbotron {
+    background-image: url('/assets/IMG-20240125-WA0012.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+    font-size: x-large;
+    background-color: #7E2553;
+    box-sizing: border-box;
+    padding-bottom: 320px;
+    padding-top: 50px auto;
+    font-family: 'Ubuntu';
+}
+
+
+/*Article*/
+
+div.container-utama {
+    margin: 100px;
+    display: flex;
+    background-color: gray;
+    width: 500px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+
+div.sejarah-div {}
+
+div.kegiatan-div {}
+
+/*Footer*/
+footer {
+    background-color: #f9ed43;
+    text-align: center;
+    font-family: 'Ubuntu';
+    color: #7E2553;
+    padding: 20px;
+}
+
+/*Mobile responsive*/
+@media screen and (max-width=500px) {}
