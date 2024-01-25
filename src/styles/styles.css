@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #f4f3f3;
     margin: 0px auto;
 }
 
@@ -74,31 +74,75 @@ div.jumbotron {
     background-size: cover;
     color: #fff;
     text-align: center;
-    padding: 100px;
+    padding: 200px;
     font-size: x-large;
-    background-color: #7E2553;
-    box-sizing: border-box;
     padding-bottom: 320px;
     padding-top: 50px auto;
     font-family: 'Ubuntu';
 }
 
-
-/*Article*/
-
-div.container-utama {
-    margin: 100px;
-    display: flex;
-    background-color: gray;
-    width: 500px;
-    height: 450px;
-    justify-content: center;
-    align-items: center;
+.jumbotron-article {
+    direction: ltr;
+    text-align: left;
 }
 
-div.sejarah-div {}
+/*Pengantar jy groub*/
+.pengantar-jy {
+    font-size: medium;
+    font-family: 'Fira Sans';
+    text-align: center;
+    margin: 20px;
+    padding: 0px;
+    color: #1D2B53;
+}
 
-div.kegiatan-div {}
+
+/*Article Section*/
+div.container-akar {
+    margin: 50px auto;
+    display: flex;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+    align-items: baseline;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.sejarah-div {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+}
+
+div.kegiatan-div {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+}
+
+div.keseruan-div {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+}
+
+div.container-kedua {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+}
+
+/*Aside section*/
+aside {
+    margin: 50px auto;
+}
+
 
 /*Footer*/
 footer {
@@ -106,8 +150,18 @@ footer {
     text-align: center;
     font-family: 'Ubuntu';
     color: #7E2553;
-    padding: 20px;
+    padding: 15px;
 }
 
 /*Mobile responsive*/
-@media screen and (max-width=500px) {}
+@media screen and (max-width=500px) {
+    .jumbotron-article {
+        text-align: left;
+        direction: ltr;
+    }
+
+    div.container-akar {
+        display: flex;
+        flex-direction: column;
+    }
+}
