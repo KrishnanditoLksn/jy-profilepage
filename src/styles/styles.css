@@ -71,7 +71,7 @@ li {
 /*Jumbotron*/
 div.jumbotron {
     background-image: url('/assets/IMG-20240125-WA0012.jpg');
-    background-size: cover;
+    background-size: auto;
     color: #fff;
     text-align: center;
     padding: 200px;
@@ -81,6 +81,7 @@ div.jumbotron {
     font-family: 'Ubuntu';
 }
 
+/*Jumbotron caption*/
 .jumbotron-article {
     direction: ltr;
     text-align: left;
@@ -91,13 +92,17 @@ div.jumbotron {
     font-size: medium;
     font-family: 'Fira Sans';
     text-align: center;
-    margin: 20px;
+    margin: 40px;
     padding: 0px;
     color: #1D2B53;
 }
 
 
+
 /*Article Section*/
+
+/*Kontainer pertama*/
+
 div.container-akar {
     margin: 50px auto;
     display: flex;
@@ -131,12 +136,59 @@ div.keseruan-div {
     background-color: rgb(255, 255, 255);
 }
 
+/*Kontainer kedua */
+
+/* Gaya container utama */
 div.container-kedua {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    justify-content: space-between;
+    justify-content: baseline;
+    padding: 10px;
+    margin: 10px;
 }
+
+/* Gaya untuk artikel */
+article {
+    margin: 10px 0;
+    padding: 20px;
+
+}
+
+/* aside {
+    width: 40%;
+    padding-right: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+  }
+   */
+
+/* Gaya untuk div sejarah-isi-div */
+div.sejarah-isi-div {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+/* Gaya untuk div kegiatan-isi-div */
+div.kegiatan-isi-div {
+    background-color: red;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+div.keseruan-isi-div {
+    background-color: blue;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+
 
 /*Aside section*/
 aside {
