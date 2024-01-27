@@ -148,11 +148,15 @@ div.container-kedua {
 }
 
 /* aside */
-div.container-kedua aside{
+div.container-kedua aside {
     width: 200px;
-  
+    display: flex;
     font-style: italic;
-    color: #29627e;
+    color: #00a8fc;
+}
+
+aside {
+    font-size: x-large;
 }
 
 /* Gaya untuk artikel */
@@ -202,12 +206,9 @@ div.keseruan-isi-div {
 }
 
 
-
-
-
 /*Footer*/
 footer {
-    background-color: #f9ed43;
+    background-color:#1D2B53;
     text-align: center;
     font-family: 'Ubuntu';
     color: #7E2553;
@@ -226,4 +227,3 @@ footer {
         flex-direction: column;
     }
 }
-
