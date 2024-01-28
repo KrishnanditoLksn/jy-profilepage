@@ -9,10 +9,6 @@ body {
     margin: 0px auto;
 }
 
-/*Header*/
-header {
-    display: inline;
-}
 
 /*Navbar*/
 .navbar {
@@ -156,7 +152,13 @@ div.container-kedua aside {
 }
 
 aside {
+    flex-direction: column;
     font-size: x-large;
+    background-color: #073c56;
+    height: 400px;
+    width: 500px;
+    padding: 35px;
+    font-family: 'Fira sans';
 }
 
 /* Gaya untuk artikel */
@@ -166,64 +168,110 @@ article {
 
 }
 
-/* aside {
-    width: 40%;
-    padding-right: 0.5rem;
-    margin-left: 0.5rem;
-    float: right;
-    box-shadow: inset 5px 0 5px -5px #29627e;
-    font-style: italic;
-    color: #29627e;
-  }
-   */
-
 /* Gaya untuk div sejarah-isi-div */
 div.sejarah-isi-div {
     background-color: white;
     padding: 10px;
     margin-bottom: 10px;
-    width: 50%;
+    width: 60%;
 
 }
 
 /* Gaya untuk div kegiatan-isi-div */
 div.kegiatan-isi-div {
     background-color: red;
-    padding: 10px;
+    padding: 30px;
     margin-bottom: 10px;
-    width: 50%;
+    width: 100%;
 
 }
 
 
 div.keseruan-isi-div {
     background-color: blue;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 50%;
-
-
+    padding: 30px;
+    margin-bottom: 50px;
+    width: 100%;
 }
 
 
 /*Footer*/
 footer {
-    background-color:#1D2B53;
+    
+    background-color: #1D2B53;
     text-align: center;
-    font-family: 'Ubuntu';
-    color: #7E2553;
-    padding: 15px;
+    font-family: 'Poppins';
+    color: white;
+    padding: 5px;
 }
 
 /*Mobile responsive*/
-@media screen and (max-width=500px) {
+@media screen and (max-width: 500px) {
+    html {
+        margin: 0px auto;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+
+    div.logo {
+        margin-bottom: 10px;
+    }
+
+    div.nav-links {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .jumbotron {
+        padding: 100px;
+        padding-bottom: 220px;
+        padding-top: 20px;
+    }
+
     .jumbotron-article {
-        text-align: left;
-        direction: ltr;
+        text-align: center;
     }
 
     div.container-akar {
-        display: flex;
         flex-direction: column;
+    }
+
+    div.container-kedua {
+        flex-direction: column;
+    }
+
+    div.container-kedua aside {
+        width: 100%;
+    }
+
+    .logo-jy-aside {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    div.sejarah-isi-div,
+    div.kegiatan-isi-div,
+    div.keseruan-isi-div {
+        width: 100%;
+    }
+
+    footer {
+        width: 110%;
     }
 }
