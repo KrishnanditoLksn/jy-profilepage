@@ -1,4 +1,4 @@
-/*html*/
+/* General Styles */
 
 html {
     scroll-behavior: smooth;
@@ -6,33 +6,37 @@ html {
 
 body {
     background-color: #f4f3f3;
-    margin: 0px auto;
+    margin: 0 auto;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
 }
 
+h1,
 h3 {
     font-family: 'Ubuntu';
     text-align: center;
 }
 
 h1 {
-    font-family: 'Ubuntu';
-    text-align: center;
     color: #384872;
 }
 
-/*Navbar*/
+/* Navbar Styles */
+
 .navbar {
     background-color: #1D2B53;
     display: flex;
     justify-content: space-between;
+    height: 64px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px;
-    margin: 0px;
+    margin: 0;
+}
 
+nav li {
+    padding: 10px;
 }
 
 div.logo {
@@ -55,17 +59,15 @@ div.nav-links {
     padding: 20px;
 }
 
+/* List Styles */
 
-/*List*/
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', 'Times New Roman', Times, serif;
     color: white;
     font-size: small;
 }
-
 
 li {
     display: inline-block;
@@ -74,8 +76,8 @@ li {
     padding-right: 2px;
 }
 
+/* Jumbotron Styles */
 
-/*Jumbotron*/
 div.jumbotron {
     background-image: url('/src/assets/IMG-20240125-WA0012.jpg');
     background-size: auto;
@@ -84,69 +86,77 @@ div.jumbotron {
     padding: 200px;
     font-size: x-large;
     padding-bottom: 320px;
-    padding-top: 50px auto;
-    font-family: 'Ubuntu';
+    padding-top: 50px;
 }
 
-/*Jumbotron caption*/
 .jumbotron-article {
     direction: ltr;
     text-align: left;
 }
 
-/*Pengantar jy groub*/
+/* Introduction Section Styles */
+
 .pengantar-jy {
     font-size: medium;
     font-family: 'Fira Sans';
     text-align: center;
     margin: 40px;
-    padding: 0px;
     color: #1D2B53;
 }
 
-
-
-/*Article Section*/
-
-/*Kontainer pertama*/
+/* Container Styles */
 
 div.container-akar {
     margin: 50px auto;
     display: flex;
-    grid-template-rows: auto;
     justify-content: space-around;
-    padding: 20px;
-    margin: 20px;
     align-items: baseline;
     text-align: center;
 }
 
-a {
-    text-decoration: none;
-}
-
-div.sejarah-div {
-    width: 300px;
-    height: 250px;
-    background-color: rgb(255, 255, 255);
-}
-
-
-div.kegiatan-div {
-    width: 300px;
-    height: 250px;
-    background-color: rgb(255, 255, 255);
-}
-
+div.sejarah-div,
+div.kegiatan-div,
 div.keseruan-div {
     width: 300px;
     height: 250px;
-    background-color: rgb(255, 255, 255);
+    background-color: #1D2B53;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-/*Kontainer kedua */
 
-/* Gaya container utama */
+/*Button*/
+
+.btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-left: 300px;
+}
+
+.btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+/* Main Content Container Styles */
+
 div.container-kedua {
     display: flex;
     flex-direction: row;
@@ -155,64 +165,46 @@ div.container-kedua {
     margin: 10px;
 }
 
-/* aside */
 div.container-kedua aside {
-    width: 200px;
-    display: flex;
+    width: 20%;
     font-style: italic;
     color: #00a8fc;
+    margin-right: 20px;
 }
 
 aside {
-    flex-direction: column;
     font-size: x-large;
     background-color: #073c56;
     height: 400px;
-    width: 500px;
     padding: 35px;
     font-family: 'Fira sans';
+    color: white;
 }
 
-/* Gaya untuk artikel */
+/* Article Styles */
+
 article {
     margin: 10px 0;
     padding: 20px;
 
 }
 
-/* Gaya untuk div sejarah-isi-div */
-div.sejarah-isi-div {
-    background-color: white;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 60%;
-}
-
-/* Gaya untuk div kegiatan-isi-div */
-div.kegiatan-isi-div {
-    background-color: red;
-    padding: 30px;
-    margin-bottom: 10px;
-    width: 70%;
-}
-
-
+div.sejarah-isi-div,
+div.kegiatan-isi-div,
 div.keseruan-isi-div {
-    background-color: blue;
-    padding: 30px;
-    margin-bottom: 50px;
-    width: 70%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .list-sejarah {
     color: #1D2B53;
-    text-align: center;
-
 }
 
-/*Container ketiga*/
+/* Members Section Styles */
+
 div.container-ketiga {
-    background-color: #073c56;
     display: flex;
     flex-direction: row;
     margin-bottom: 40px;
@@ -228,8 +220,8 @@ div.container-ketiga>div {
     font-size: 30px;
 }
 
+/* Footer Styles */
 
-/*Footer*/
 footer {
     background-color: #1D2B53;
     text-align: center;
@@ -238,15 +230,15 @@ footer {
     padding: 5px;
 }
 
-/*Mobile responsive*/
-@media screen and (max-width: 500px) {
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px)  {
     html {
-        margin: 0px auto;
+        margin: 0 auto;
         overflow-x: hidden;
     }
 
     body {
-        padding: 0;
+        padding: 0px;
     }
 
     .navbar {
@@ -274,7 +266,6 @@ footer {
         padding: 100px;
         padding-bottom: 220px;
         padding-top: 20px;
-
     }
 
     .jumbotron-article {
@@ -307,17 +298,29 @@ footer {
     div.sejarah-isi-div,
     div.kegiatan-isi-div,
     div.keseruan-isi-div {
+        padding: 20px;
+        border-radius: 20px;
         width: 100%;
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    .btn {
+        align-items: center;
     }
 
     footer {
         width: 100%;
         font-size: 60%;
-
     }
 
     div.container-ketiga {
         flex-direction: column;
         align-items: center;
+    }
+
+    .sejarah-artikel {
+        flex-direction: column;
+        display: flex;
     }
 }
