@@ -132,7 +132,7 @@ div.container-ketiga {
     justify-content: space-around;
 }
 
-div.container-ketiga > div {
+div.container-ketiga>div {
     background-color: #f1f1f1;
     width: 100px;
     margin: 10px;
