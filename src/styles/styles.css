@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background-color: #f4f3f3;
+    background-color: white;
     margin: 0 auto;
     font-family: 'Poppins', 'Times New Roman', Times, serif;
 }
@@ -92,7 +92,6 @@ div.jumbotron {
 }
 
 /* Introduction Section Styles */
-
 .pengantar-jy {
     font-size: medium;
     font-family: 'Fira Sans', serif;
@@ -132,7 +131,7 @@ div.container-ketiga {
     justify-content: space-around;
 }
 
-div.container-ketiga>div {
+div.container-ketiga > div {
     background-color: #f1f1f1;
     width: 100px;
     margin: 10px;
@@ -151,7 +150,6 @@ div.timeline {
     padding: 50px;
 }
 
-
 ul.timeline-list {
     display: flex;
     flex-direction: column;
@@ -160,6 +158,25 @@ ul.timeline-list {
     margin: 0;
     padding: 0;
     color: black;
+}
+
+/* container to handle gallery grid
+ */
+div.image-container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 70px;
+    justify-items: center;
+    row-gap: 100px;
+    column-gap: 100px;
+    margin: 20px 20px 40px;
+}
+
+div.item {
+    background-color: #172440;
+    width: 200px;
+    height: 200px;
 }
 
 /* Footer Styles */
@@ -172,7 +189,7 @@ footer {
 }
 
 /* Mobile Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     html {
         margin: 0 auto;
         overflow-x: hidden;
@@ -182,16 +199,12 @@ footer {
         padding: 0;
     }
 
-    .navbar {
-        flex-direction: column;
-        align-items: center;
+    .nav-links {
+        display: none;
     }
 
-    nav a {
-        display: block;
-        text-align: center;
-        padding: 10px;
-        margin: 0;
+    .nav-links a.icon {
+        display: inline;
     }
 
     div.logo {
