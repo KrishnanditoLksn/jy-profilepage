@@ -4,11 +4,26 @@ html {
     scroll-behavior: smooth;
 }
 
+/*CSS Variable */
+:root {
+    --primary-color: #1D2B53;
+    --secondary-color: #7E2553;
+    --tertiary-color: #384872;
+    --quaternary-color: white;
+    --quinary-color: #172440;
+}
+
 body {
-    background-color: white;
+    background-color: var(--quaternary-color);
     margin: 0 auto;
     font-family: 'Poppins', 'Times New Roman', Times, serif;
 }
+
+
+.dark-mode {
+    background-color: black;
+}
+
 
 h1,
 h3 {
@@ -23,14 +38,14 @@ h1 {
 /* Navbar Styles */
 
 .navbar {
-    background-color: #1D2B53;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     height: 64px;
 }
 
 nav a {
-    color: white;
+    color: var(--quaternary-color);
     text-decoration: none;
     margin: 0;
 }
@@ -48,7 +63,7 @@ nav a:active {
 }
 
 nav a:hover {
-    background-color: #7E2553;
+    background-color: var(--secondary-color);
     transition: 1s;
     border-radius: 5px;
 }
@@ -59,13 +74,32 @@ div.nav-links {
     padding: 20px;
 }
 
+
+/* Dark mode styles */
+.theme-switch {
+    position: relative;
+    top: -35px;
+    bottom: -50px;
+    right: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    background-color: var(--quaternary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s;
+}
+
 /* List Styles */
 
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    color: white;
+    color: var(--quaternary-color);
     font-size: small;
 }
 
@@ -76,11 +110,10 @@ li {
 }
 
 /* Jumbotron Styles */
-
 div.jumbotron {
     background-image: url('/src/assets/IMG-20240125-WA0012.jpg');
     background-size: auto;
-    color: #fff;
+    color: var(--quaternary-color);
     text-align: center;
     font-size: x-large;
     padding: 50px 250px 320px;
@@ -97,11 +130,10 @@ div.jumbotron {
     font-family: 'Fira Sans', serif;
     text-align: center;
     margin: 40px;
-    color: #1D2B53;
+    color: var(--primary-color);
 }
 
 /* Container Styles */
-
 div.container-akar {
     margin: 50px auto;
     display: flex;
@@ -115,7 +147,7 @@ div.kegiatan-div,
 div.keseruan-div {
     width: 300px;
     height: 250px;
-    background-color: #1D2B53;
+    background-color: var(--primary-color);
     margin-bottom: 20px;
     border-radius: 10px;
 }
@@ -123,7 +155,6 @@ div.keseruan-div {
 
 /*Button*/
 /* Members Section Styles */
-
 div.container-ketiga {
     display: flex;
     flex-direction: row;
@@ -132,7 +163,7 @@ div.container-ketiga {
 }
 
 div.container-ketiga > div {
-    background-color: #f1f1f1;
+    background-color: var(--quaternary-color);
     width: 100px;
     margin: 10px;
     text-align: center;
@@ -163,7 +194,7 @@ ul.timeline-list {
 /* container to handle gallery grid
  */
 div.image-container {
-    background-color: white;
+    background-color: var(--quaternary-color);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 70px;
@@ -174,9 +205,15 @@ div.image-container {
 }
 
 div.item {
-    background-color: #172440;
+    background-color: var(--primary-color);
     width: 200px;
     height: 200px;
+}
+
+a.prev:hover {
+    border-color: #7E2553;
+    border-radius: 10px;
+    transition: 1s;
 }
 
 /* Footer Styles */
@@ -214,6 +251,8 @@ footer {
     div.nav-links {
         text-align: center;
         padding: 10px;
+        position: fixed;
+        overflow: hidden;
     }
 
     .jumbotron {
