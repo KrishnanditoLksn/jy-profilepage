@@ -223,7 +223,22 @@ footer {
     font-family: 'Poppins', serif;
     color: white;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+div.footer-div p {
+    font-size: 25px;
+}
+
+/*terms and service*/
+div.footer-div div.terms p {
+    text-align: left;
+    margin-top: 1px;
+    font-size: 15px;
+}
+
 
 /* Mobile Responsive Styles */
 @media screen and (max-width: 600px) {
